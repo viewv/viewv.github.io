@@ -1,0 +1,93 @@
+# Site settings 配置站点
+title: "view's vlog"
+description: '上下求索'
+keywords: 'stay, forward'
+url: 'https://blog.viewv.top' # your host
+
+# nav 中文字符空格：&emsp;
+nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
+  首页: '/'
+  标签: '/tags.html'
+  时间线: '/timeline.html'
+  关于博主: '/about.html'
+  友情链接: '/friendLink.html'
+
+# 博主
+author: true
+name: 'viewv'
+NickName: 'viewv'
+webtitle: "viewv's blog"
+bio: '当无人为你指路时，你要无所畏惧的继续前行'
+about: true
+aboutyou: '挣扎生存的大学生'
+portraits: '/assets/profile.jpeg' # your portraits image file path
+
+# SNS
+SNS: true
+SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
+  mail: 'mailto:zxn@zxnnet.top'
+  weixin: '/assets/wechat.png' # 你的微信二维码存放的地址
+  qq: '/assets/qq.jpg' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  github: 'https://github.com/viewv'
+  # Codepen: 'https://codepen.io/viewv/'
+  weibo: 'https://www.weibo.com/p/1005056564056215/home?from=page_100505&mod=TAB#place'
+  instagram: 'https://www.instagram.com/viewversion/'
+  Twitter: 'https://twitter.com/ViewvZxn'
+  Dribbble: 'https://dribbble.com/viewv'
+  Facebook: 'https://www.facebook.com/profile.php?id=100025692197711'
+  # Google: ''
+  zhihu: 'https://www.zhihu.com/people/james-1-83/activities'
+  juejin: 'https://juejin.im/user/5bfb855f5188251a826610d6'
+  twitch: 'https://www.twitch.tv/zxnnetviewv'
+
+# 分页
+paginate: 3
+paginatepath: ['page:num']
+
+# since
+footer:
+  since: 2018
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+# 代码高亮 使用rouge
+highlighter: rouge
+# 代码高亮主题使用pygments主题: autumn\ default\ emacs\ friendly\ manni\ murphy\ pastie\ perldoc\ tango 任选一个你喜欢的主题名称填在下面的单引号中
+pygmentsTheme: 'default'
+
+# 友情链接
+friends:
+  github: 'https://github.com/'
+  jekyll: 'https://www.jekyll.com.cn/'
+  HardCandy: https://github.com/xukimseven/HardCandy-Jekyll
+
+# 评论 最佳体验 在disqus、livere和Gitment之间三选一
+# disqus 评论
+disqus: false
+disqus_url: '' # https://abc.disqus.com/embed.js
+# 来必力评论
+livere: true
+livere_uid: 'MTAyMC8zODkwNy8xNTQzNQ==' # MTAyMC8zNDI2OS8xMDgwNg==
+# Gitment评论 OAuth Application
+Gitment: false
+Gitment_owner: 'viewv'  # github用户名
+Gitment_repo: 'commit'  # github博客存放的仓库名
+client_id: 'ab30e0cf3ebf3f3ae13c'  # 注册 OAuth Application 后获得的 client_id
+client_secret: '82f7f718516a19c6bcec25e209bc44a07fa3bd2d'  # 注册 OAuth Application 后获得的 client_secret
+
+# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
+social-share: true
+social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
+
+# 百度统计 在baidu-url里填写自己相关的url代码
+baidu: true
+baidu-url: 'https://hm.baidu.com/hm.js?6767fb2712cd8c89100497139154bed1'
+# 谷歌分析 在google-ID里填写自己在谷歌分析获得的追踪ID
+google: true
+google-ID: 'UA-130703551-1'
+
+# 博客头信息备选颜色（该部分在站点中不充当站点变量，将其写在post的头信息中用来充当页面变量）
+color: rgb(154,133,255) rgb(255,90,90) rgb(255,210,32) rgb(98,170,255)
+

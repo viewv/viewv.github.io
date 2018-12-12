@@ -1,2 +1,2 @@
-# viewv.github.io
-My Blog
+# viewv blog
+This is the blog of viewv!
