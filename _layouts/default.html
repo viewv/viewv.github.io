@@ -5,12 +5,12 @@
 <head>
     <!-- 引入head标签 -->
     {% include head.html %}
-    {% include reading-time.html %}
 </head>
 
 <body>
     <!-- 页面主体 -->
-    {{ content }}
+    {{ content | reading_time_as_i}}
+    {% include reading-time.html %}
 
     <!-- 引用wow.js的动画效果 -->
     <script src="/assets/js/wow.js"></script>
