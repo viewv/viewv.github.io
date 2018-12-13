@@ -32,27 +32,6 @@
                 <li><a href="{{ i[1] }}" style="color: white;">{{ i[0] }}</a></li>
                 {% endfor %}
             </ul>
-            <!-- HTML elements for search-->
-            <div id="search-container" style="float:right;position: fixed;right:0px; bottom:10px; z-index:999999;background:#eeeeee;padding:10px 10px 0px 10px;">
-                <input type="text" id="search-input" placeholder="search..." style="border:2px solid;border-radius:25px;padding-left:10px !important;">
-                <ul id="results-container" style="max-width:300px;"></ul>
-            </div>
-
-            <!-- script pointing to jekyll-search.js-->
-            <script src="/assets/js/simple-jekyll-search.min.js"></script>
-
-            <script>
-                window.simpleJekyllSearch = new SimpleJekyllSearch({
-                    searchInput: document.getElementById('search-input'),
-                    resultsContainer: document.getElementById('results-container'),
-                    json: '/search.json',
-                    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-                    noResultsText: 'No results found',
-                    limit: 5,
-                    fuzzy: false,
-                    exclude: ['Welcome']
-                })
-            </script>
         </nav>
         <div id="top-boot">
             <a href="javascript:;" id="boot1" style="display:block;" onclick="document.getElementById('boot-area').style.display='block';document.getElementById('boot1').style.display='none';document.getElementById('boot2').style.display='block';"><img
