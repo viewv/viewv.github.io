@@ -136,7 +136,7 @@ a {
   /*border-bottom: 1px solid #e7eaf1;*/
   position: relative;
   z-index: -1;
-  background-color: white;
+  /* background-color: white; */
 }
 
 .top svg {
