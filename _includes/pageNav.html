@@ -1,29 +1,52 @@
+<!-- HTML elements for search-->
+<div id="search-container" style="float:right;position: fixed;right:0px; bottom:10px; z-index:999999;background:#eeeeee;padding:10px 10px 0px 10px;">
+  <input type="text" id="search-input" placeholder="search..." style="border:2px solid;border-radius:25px;padding-left:10px !important;">
+  <ul id="results-container" style="max-width:300px;"></ul>
+</div>
+
+<!-- script pointing to jekyll-search.js-->
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
+
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 5,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>
+
+<!-- Navigation -->
 <nav class="pagination">
   <div class="page-links">
     {% if paginator.page == 1 %}
-        <a href="{{ "/" | relative_url }}" class="page-link" title="Index Page">1</a>
+    <a href="{{ "/" | relative_url }}" class="page-link" title="Index Page">1</a>
     {% endif %}
     {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="{{ "/" | relative_url }}" class="page-link" title="Previous Page">&laquo;</a>
-            {% else %}
-            <a href="/page{{ paginator.previous_page }}/" class="page-link" title="Previous Page">&laquo;</a>
-        {% endif %}
+    {% if paginator.previous_page == 1 %}
+    <a href="{{ "/" | relative_url }}" class="page-link" title="Previous Page">&laquo;</a>
+    {% else %}
+    <a href="/page{{ paginator.previous_page }}/" class="page-link" title="Previous Page">&laquo;</a>
+    {% endif %}
     {% endif %}
     {% if paginator.next_page %}
-        <!-- {% if paginator.next_page == 1 %}
+    <!-- {% if paginator.next_page == 1 %}
             <a href="{{ "/" | relative_url }}" class="page-link" title="Next Page">\</a>
             {% else %}
             <a href="/page{{ paginator.next_page }}/" class="page-link" title="Next Page">&raquo;</a>
         {% endif %} -->
-        <a href="/page{{ paginator.next_page }}/" class="page-link" title="Next Page">&raquo;</a>
+    <a href="/page{{ paginator.next_page }}/" class="page-link" title="Next Page">&raquo;</a>
     {% endif %}
     {% if paginator.page == paginator.total_pages %}
-      {% if paginator.total_pages == 1 %}
-        <a href="{{ "/" | relative_url }}" class="page-link" title="No Next">\</a>
-      {% else %}
-        <a href="/page{{ paginator.page }}" class="page-link" title="Final Page">{{ paginator.page }}</a>
-      {% endif %}
+    {% if paginator.total_pages == 1 %}
+    <a href="{{ "/" | relative_url }}" class="page-link" title="No Next">\</a>
+    {% else %}
+    <a href="/page{{ paginator.page }}" class="page-link" title="Final Page">{{ paginator.page }}</a>
+    {% endif %}
     {% endif %}
   </div>
 
