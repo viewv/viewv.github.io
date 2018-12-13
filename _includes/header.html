@@ -8,26 +8,6 @@
                 {% for i in site.nav %}
                 <li><a href="{{ i[1] }}">{{ i[0] }}</a></li>
                 {% endfor %}
-                <!-- HTML elements for search-->
-                <div id="search-container">
-                    <input type="text" id="search-input" placeholder="search...">
-                    <ul id="results-container"></ul>
-                </div>
-                <!-- script pointing to jekyll-search.js-->
-                <script src="/assets/js/simple-jekyll-search.min.js"></script>
-
-                <script>
-                    window.simpleJekyllSearch = new SimpleJekyllSearch({
-                        searchInput: document.getElementById('search-input'),
-                        resultsContainer: document.getElementById('results-container'),
-                        json: '/search.json',
-                        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
-                        noResultsText: 'No results found',
-                        limit: 5,
-                        fuzzy: false,
-                        exclude: ['Welcome']
-                    })
-                </script>
             </ul>
         </nav>
         <div id="top-boot">
