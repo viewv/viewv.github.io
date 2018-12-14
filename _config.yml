@@ -7,6 +7,7 @@ url: 'https://viewv.top' # your host
 # nav 中文字符空格：&emsp;
 nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
   首页: '/'
+  技术: 'https://tech.viewv.top'
   标签: '/tags.html'
   时间线: '/timeline.html'
   关于博主: '/about.html'
