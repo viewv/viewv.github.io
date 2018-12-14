@@ -62,6 +62,7 @@ pygmentsTheme: 'default'
 
 # 友情链接
 friends:
+  My-Tech-Blog: 'https://tech.viewv.top'
   github: 'https://github.com/'
   jekyll: 'https://www.jekyll.com.cn/'
   HardCandy: https://github.com/xukimseven/HardCandy-Jekyll
