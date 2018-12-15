@@ -42,4 +42,4 @@ print_hi('Tom')
 
 ### Video Test
 
-<iframe src="//player.bilibili.com/player.html?aid=9453144&cid=15621866&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height = "370"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=9453144&cid=15621866&page=1" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
