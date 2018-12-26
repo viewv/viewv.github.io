@@ -3,7 +3,7 @@ layout: post
 title: '北京游记-1'
 date: 2018-12-26
 author: Jekyll
-color: rgb(255,102,204)
+color: rgb(119,218,194)
 cover: 'https://viewv.top/Pico/img/20181226221809.jpg'
 subtitle: '说白了都是挤地铁的牢骚'
 tags: Beijing
