@@ -15,7 +15,7 @@ Jekyll also offers powerful support for code snippets:
 
 ### Music Test
 
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100" src="//music.163.com/outchain/player?type=2&id=1329734055&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="100" src="//music.163.com/outchain/player?type=2&id=1329734055&auto=0&height=66"></iframe>
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
