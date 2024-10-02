@@ -3,6 +3,7 @@ title: Collisions and Floyd's Cycle-Finding Algorithm
 date: 2024-10-02 14:46:54 +0200
 categories: [Cryptography, 密码学]
 tags: [cryptography]     # TAG names should always be lowercase
+math: true
 ---
 
 ## Collisions and Pollard's rho

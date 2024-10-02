@@ -3,6 +3,7 @@ title: Puncturable Pseudorandom Functions
 date: 2024-10-02 14:15:15 +0200
 categories: [Cryptography, 密码学]
 tags: [cryptography]     # TAG names should always be lowercase
+math: true
 ---
 
 马上就要开始新学期了，本来计划假期写一下密码学课程学到的新东西，但是一直摸鱼到现在。
