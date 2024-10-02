@@ -113,7 +113,6 @@ print(f"PRF({input2}) again = {output2_again}")
 
     对于输入1和2，计算其PRF输出：
 
-    ````python
     ```python
     input1 = 1
     input2 = 2
@@ -124,7 +123,6 @@ print(f"PRF({input2}) again = {output2_again}")
     print(f"PRF({input1}) = {output1}")
     print(f"PRF({input2}) = {output2}")
     ```
-    ````
 
 1. **打孔操作**：
 
@@ -149,4 +147,3 @@ print(f"PRF({input2}) again = {output2_again}")
     ```
 
 感觉这个例子纯暴力展示，参考意义不大。
-
