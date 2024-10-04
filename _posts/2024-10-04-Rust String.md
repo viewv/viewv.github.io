@@ -37,7 +37,7 @@ fn main() {
 
 ```rust
 s2.push_str(", world");
-^^ `s2` is a `&` reference, so the data it refers to cannot be borrowed as mutable
+^^ s2 is a & reference, so the data it refers to cannot be borrowed as mutable
 ```
 
 这里创建了一个`String`后，所有权归属`s1`，之后尝试`s2`借用`s1`，这里是一个不可变借用，所以实际上`mut`这里是没有意义的，因为`s1`是不变的。那么自然的后面就不能使用`s2.push_str(", world");`这种方法。那么自然而然的我们就想到了另一种定义方法：`let mut s1 = String::from("hello");` 这种情况下，结合可变借用，就可以实现我们想要的效果。
@@ -61,7 +61,7 @@ fn main() {
 
 ```rust
 s1.pust_str(" world");
-^^^^^^^^ method not found in `&str`
+^^^^^^^^ method not found in &str
 ```
 
 其实变量`s1`绑定到了一个字符串字面值，这个字符串值是硬编码进程序代码中的。但是我们还不死心，接下来我们可能很自然的认为那我们让`s1`可变就可以了，于是用`let mut s1 = "hello";`定义，但是依然报相同的错误。那么这个`mut`有任何意义吗？
@@ -80,7 +80,7 @@ fn main() {
 
 ```	rust
 let s1 = "hello";
-    -- first assignment to `s1`
+    -- first assignment to s1
 s1 = "world";
 ^^^^^^^^^^^^ cannot assign twice to immutable variable
 help: consider making this binding mutable
